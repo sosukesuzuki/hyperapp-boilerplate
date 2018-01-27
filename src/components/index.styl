@@ -1,2 +1,21 @@
 .main
-  color red
+  color $text-color
+  background-color $background-color
+  font-size 35px
+  height 100vh
+  p
+    margin 0
+  button
+    font-size 25px
+    outline none
+    color $text-color
+    border none
+    border-radius 0.1em
+    width 80px
+    height 60px
+    background-color lighten($background-color, 10%)
+    &:hover
+      background-color lighten($background-color, 5%)
+    &:active
+      background-color lighten($background-color, 2%)
+
